@@ -1,4 +1,144 @@
 {
-  "modules": [],
-  "generated_at": "2026-05-08T15:18:11.599Z"
+  "modules": [
+    {
+      "id": ".repomind/config",
+      "path": ".repomind/config.yml",
+      "name": "REPOMIND_CONFIG",
+      "summary": "Defines project configuration for RepoMind AI, changelog, bot, and tickets.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "README",
+      "path": "README.md",
+      "name": "README",
+      "summary": "Provides project overview, setup instructions, and deployment guide for Next.js app.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "tsconfig",
+      "path": "tsconfig.json",
+      "name": "TSCONFIG",
+      "summary": "Configures TypeScript compiler options for a Next.js project, including paths.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/tech-stack",
+      "path": ".repomind/architecture/tech-stack.yml",
+      "name": "REPOMIND_ARCHITECTURE_TECH_STACK",
+      "summary": "Placeholder for detected project tech stack, languages, frameworks, and services.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/onboarding",
+      "path": ".repomind/architecture/onboarding.md",
+      "name": "REPOMIND_ARCHITECTURE_ONBOARDING",
+      "summary": "Placeholder for project onboarding guide, to be filled by RepoMind.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "src/app/layout",
+      "path": "src/app/layout.tsx",
+      "name": "SRC_APP_LAYOUT",
+      "summary": "Defines the root HTML layout for the Next.js application with fonts.",
+      "layer": "ui",
+      "dependencies": [
+        "./globals.css"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": "eslint.config",
+      "path": "eslint.config.mjs",
+      "name": "ESLINT_CONFIG",
+      "summary": "Configures ESLint for Next.js and TypeScript projects.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "next.config",
+      "path": "next.config.ts",
+      "name": "NEXT_CONFIG",
+      "summary": "Defines Next.js framework configuration options.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "postcss.config",
+      "path": "postcss.config.mjs",
+      "name": "POSTCSS_CONFIG",
+      "summary": "Configures PostCSS with Tailwind CSS plugin.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "src/app/page",
+      "path": "src/app/page.tsx",
+      "name": "SRC_APP_PAGE",
+      "summary": "Renders the main home page with Next.js logo and links.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/architecture/modules",
+      "path": ".repomind/architecture/modules.json",
+      "name": "REPAMIND_ARCHITECTURE_MODULES",
+      "summary": "Placeholder for Repomind module architecture data.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/.meta/sync-state",
+      "path": ".repomind/.meta/sync-state.json",
+      "name": "REPAMIND_META_SYNC_STATE",
+      "summary": "Stores Repomind synchronization state metadata.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/.meta/settings",
+      "path": ".repomind/.meta/settings.json",
+      "name": "REPAMIND_META_SETTINGS",
+      "summary": "Stores Repomind tool settings.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/.meta/ticket-index",
+      "path": ".repomind/.meta/ticket-index.json",
+      "name": "REPAMIND_META_TICKET_INDEX",
+      "summary": "Stores Repomind ticket and ADR index metadata.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "package",
+      "path": "package.json",
+      "name": "PACKAGE",
+      "summary": "Defines project metadata, scripts, and dependencies.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": true
+    }
+  ],
+  "generated_at": "2026-05-08T15:18:48.059Z",
+  "strategy": "deep-read",
+  "anchor_count": 15
 }
