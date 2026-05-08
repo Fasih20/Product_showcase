@@ -1,10 +1,100 @@
 {
   "modules": [
     {
+      "id": ".repomind/.meta/ticket-index",
+      "path": ".repomind/.meta/ticket-index.json",
+      "name": "REPOMIND_META_TICKET_INDEX",
+      "summary": "Indexes all tickets and ADRs managed by the RepoMind bot.",
+      "layer": "data",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/onboarding",
+      "path": ".repomind/architecture/onboarding.md",
+      "name": "REPOMIND_ARCHITECTURE_ONBOARDING",
+      "summary": "Provides initial onboarding information for new project contributors.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/modules",
+      "path": ".repomind/architecture/modules.json",
+      "name": "REPOMIND_ARCHITECTURE_MODULES",
+      "summary": "Stores the architectural map of modules and their properties.",
+      "layer": "data",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/architecture/tech-stack",
+      "path": ".repomind/architecture/tech-stack.yml",
+      "name": "REPOMIND_ARCHITECTURE_TECH_STACK",
+      "summary": "Defines the project's technology stack, languages, and frameworks.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/adrs/adr-003",
+      "path": ".repomind/adrs/adr-003.md",
+      "name": "REPOMIND_ADRS_ADR_003",
+      "summary": "Documents decision for admin API key authentication strategy.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/config",
+      "path": ".repomind/config.yml",
+      "name": "REPOMIND_CONFIG",
+      "summary": "Global configuration for RepoMind bot and project settings.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "README",
+      "path": "README.md",
+      "name": "README",
+      "summary": "Provides project overview, getting started guide, and deployment instructions.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/tickets/EPIC-001/T-001-create-the-api-admin-route-file",
+      "path": ".repomind/tickets/EPIC-001/T-001-create-the-api-admin-route-file.md",
+      "name": "REPOMIND_TICKET_T_001",
+      "summary": "Defines task to create the initial `/api/admin` route file.",
+      "layer": "data",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/tickets/EPIC-001/T-002-define-the-initial-system-status-response-structur",
+      "path": ".repomind/tickets/EPIC-001/T-002-define-the-initial-system-status-response-structur.md",
+      "name": "REPOMIND_TICKET_T_002",
+      "summary": "Defines task to create system status response structure.",
+      "layer": "data",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "package",
+      "path": "package.json",
+      "name": "PACKAGE_JSON",
+      "summary": "Manages project dependencies, scripts, and metadata for Node.js.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
       "id": "src/app/layout",
       "path": "src/app/layout.tsx",
       "name": "APP_LAYOUT",
-      "summary": "Defines the root HTML layout for the Next.js application with custom fonts.",
+      "summary": "Defines the root layout for the Next.js application, including fonts.",
       "layer": "ui",
       "dependencies": [
         "./globals.css"
@@ -12,10 +102,19 @@
       "is_hotspot": false
     },
     {
+      "id": "src/app/api/admin/route",
+      "path": "src/app/api/admin/route.ts",
+      "name": "API_ADMIN_ROUTE",
+      "summary": "Handles admin API requests, exposing a deliberate security vulnerability.",
+      "layer": "api",
+      "dependencies": [],
+      "is_hotspot": true
+    },
+    {
       "id": "eslint.config",
       "path": "eslint.config.mjs",
       "name": "ESLINT_CONFIG",
-      "summary": "Configures ESLint for Next.js and TypeScript using flat config format.",
+      "summary": "Configures ESLint for the project, extending Next.js and TypeScript rules.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
@@ -33,7 +132,7 @@
       "id": "postcss.config",
       "path": "postcss.config.mjs",
       "name": "POSTCSS_CONFIG",
-      "summary": "Configures PostCSS with Tailwind CSS plugin for styling.",
+      "summary": "Configures PostCSS plugins, specifically for Tailwind CSS processing.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
@@ -42,7 +141,7 @@
       "id": "src/app/page",
       "path": "src/app/page.tsx",
       "name": "APP_PAGE",
-      "summary": "Renders the main home page with Next.js logo, instructions, and links.",
+      "summary": "Renders the main home page with Next.js logo and getting started links.",
       "layer": "ui",
       "dependencies": [],
       "is_hotspot": false
@@ -51,7 +150,25 @@
       "id": ".repomind/.meta/settings",
       "path": ".repomind/.meta/settings.json",
       "name": "REPOMIND_META_SETTINGS",
-      "summary": "Stores RepoMind bot settings like commit branch and author details.",
+      "summary": "Stores RepoMind bot configuration settings for commit behavior.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/adrs/adr-002",
+      "path": ".repomind/adrs/adr-002.md",
+      "name": "REPOMIND_ADRS_ADR_002",
+      "summary": "Documents the decision to use NextAuth.js for SSO in the application.",
+      "layer": "infra",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/adrs/adr-001",
+      "path": ".repomind/adrs/adr-001.md",
+      "name": "REPOMIND_ADRS_ADR_001",
+      "summary": "Documents the initial architectural baseline for the RepoMind project.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
@@ -60,94 +177,275 @@
       "id": ".repomind/.meta/sync-state",
       "path": ".repomind/.meta/sync-state.json",
       "name": "REPOMIND_META_SYNC_STATE",
-      "summary": "Tracks RepoMind bot's synchronization state, including last processed commit.",
+      "summary": "Tracks the synchronization state and last processed commit for RepoMind.",
       "layer": "data",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/.meta/ticket-index",
-      "path": ".repomind/.meta/ticket-index.json",
-      "name": "REPOMIND_META_TICKET_INDEX",
-      "summary": "Indexes tickets and ADRs managed by the RepoMind bot.",
-      "layer": "data",
+      "id": "T-001-design-the-products-page-layout",
+      "path": ".repomind/tickets/EPIC-001/T-001-design-the-products-page-layout.md",
+      "name": "T_001_DESIGN_THE_PRODUCTS_PAGE_LAYOUT_MD",
+      "summary": "Defines conceptual layout and structure for the products page.",
+      "layer": "ui",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/adrs/adr-001",
-      "path": ".repomind/adrs/adr-001.md",
-      "name": "REPOMIND_ADRS_ADR_001",
-      "summary": "Documents the decision to establish an initial architectural baseline for the codebase.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": ".repomind/config",
-      "path": ".repomind/config.yml",
-      "name": "REPOMIND_CONFIG",
-      "summary": "Configures RepoMind bot project details, AI, changelog, and integrations.",
-      "layer": "infra",
-      "dependencies": [],
-      "is_hotspot": false
-    },
-    {
-      "id": "README",
-      "path": "README.md",
-      "name": "README",
-      "summary": "Provides project overview, setup instructions, and deployment guide for Next.js app.",
-      "layer": "infra",
+      "id": "T-003-fetch-and-display-product-data-mock",
+      "path": ".repomind/tickets/EPIC-001/T-003-fetch-and-display-product-data-mock.md",
+      "name": "T_003_FETCH_AND_DISPLAY_PRODUCT_DATA_MOCK_MD",
+      "summary": "Uses mock data to simulate fetching and displaying products on page.",
+      "layer": "ui",
       "dependencies": [],
       "is_hotspot": false
     },
     {
       "id": "tsconfig",
       "path": "tsconfig.json",
-      "name": "TSCONFIG",
-      "summary": "Configures TypeScript compiler options for a Next.js project, including paths.",
+      "name": "TSCONFIG_JSON",
+      "summary": "Configures TypeScript compiler options for the project, including paths and plugins.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/architecture/modules",
-      "path": ".repomind/architecture/modules.json",
-      "name": "REPOMIND_ARCHITECTURE_MODULES",
-      "summary": "Stores RepoMind's architectural map of modules, dependencies, and layers.",
+      "id": "T-003-implement-a-basic-placeholder-response-for-api-adm",
+      "path": ".repomind/tickets/EPIC-001/T-003-implement-a-basic-placeholder-response-for-api-adm.md",
+      "name": "T_003_IMPLEMENT_A_BASIC_PLACEHOLDER_RESPONSE_FOR_API_ADM_MD",
+      "summary": "Implements a basic placeholder JSON response for the /api/admin route.",
+      "layer": "api",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-004-add-styling-for-products-page",
+      "path": ".repomind/tickets/EPIC-001/T-004-add-styling-for-products-page.md",
+      "name": "T_004_ADD_STYLING_FOR_PRODUCTS_PAGE_MD",
+      "summary": "Applies Tailwind CSS styling to enhance the visual appearance of the products page.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-002-implement-products-page-ui-shell",
+      "path": ".repomind/tickets/EPIC-001/T-002-implement-products-page-ui-shell.md",
+      "name": "T_002_IMPLEMENT_PRODUCTS_PAGE_UI_SHELL_MD",
+      "summary": "Creates basic React components and structure for the products page UI shell.",
+      "layer": "ui",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-005-implement-a-utility-to-get-server-uptime",
+      "path": ".repomind/tickets/EPIC-002/T-005-implement-a-utility-to-get-server-uptime.md",
+      "name": "T_005_IMPLEMENT_A_UTILITY_TO_GET_SERVER_UPTIME_MD",
+      "summary": "Implements a utility function to calculate and return the server's uptime.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-004-create-a-utility-to-fetch-application-version",
+      "path": ".repomind/tickets/EPIC-002/T-004-create-a-utility-to-fetch-application-version.md",
+      "name": "T_004_CREATE_A_UTILITY_TO_FETCH_APPLICATION_VERSION_MD",
+      "summary": "Creates a utility function to fetch the application version from package.json.",
+      "layer": "service",
+      "dependencies": [],
+      "is_hotspot": false
+    },
+    {
+      "id": "T-005-research-and-choose-sso-strategy-adr",
+      "path": ".repomind/tickets/EPIC-002/T-005-research-and-choose-sso-strategy-adr.md",
+      "name": "T_005_RESEARCH_AND_CHOOSE_SSO_STRATEGY_ADR_MD",
+      "summary": "Researches and documents the chosen Single Sign-On (SSO) strategy in an ADR.",
       "layer": "infra",
       "dependencies": [],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/architecture/onboarding",
-      "path": ".repomind/architecture/onboarding.md",
-      "name": "REPOMIND_ARCHITECTURE_ONBOARDING",
-      "summary": "Placeholder for project onboarding guide, to be filled by RepoMind.",
-      "layer": "infra",
+      "id": "T-006-configure-nextauth-js-base-setup",
+      "path": ".repomind/tickets/EPIC-002/T-006-configure-nextauth-js-base-setup.md",
+      "name": "T_006_CONFIGURE_NEXTAUTH_JS_BASE_SETUP_MD",
+      "summary": "Configures NextAuth.js for authentication, including installation and session management.",
+      "layer": "api",
       "dependencies": [],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-003/T-013-create-sso-login-buttons-on-ui",
+      "path": ".repomind/tickets/EPIC-003/T-013-create-sso-login-buttons-on-ui.md",
+      "name": "REPAMIND_TICKETS_EPIC_003_T_013_CREATE_SSO_LOGIN_BUTTONS_ON_UI",
+      "summary": "Create SSO login buttons for Google and Microsoft on the UI.",
+      "layer": "ui",
+      "dependencies": [
+        "T-010",
+        "T-012"
+      ],
       "is_hotspot": false
     },
     {
-      "id": ".repomind/architecture/tech-stack",
-      "path": ".repomind/architecture/tech-stack.yml",
-      "name": "REPOMIND_ARCHITECTURE_TECH_STACK",
-      "summary": "Defines the project's detected tech stack, languages, frameworks, and services.",
+      "id": ".repomind/tickets/EPIC-004/T-012-update-readme-with-admin-api-usage-and-security-no",
+      "path": ".repomind/tickets/EPIC-004/T-012-update-readme-with-admin-api-usage-and-security-no.md",
+      "name": "REPAMIND_TICKETS_EPIC_004_T_012_UPDATE_README_WITH_ADMIN_API_USAGE_AND_SECURITY_NO",
+      "summary": "Update README with admin API usage and security notes.",
       "layer": "infra",
-      "dependencies": [],
+      "dependencies": [
+        "T-009"
+      ],
       "is_hotspot": false
     },
     {
-      "id": "package",
-      "path": "package.json",
-      "name": "PACKAGE",
-      "summary": "Manages project dependencies, scripts, and metadata for a Next.js application.",
+      "id": ".repomind/tickets/EPIC-003/T-010-integrate-google-sso-provider",
+      "path": ".repomind/tickets/EPIC-003/T-010-integrate-google-sso-provider.md",
+      "name": "REPAMIND_TICKETS_EPIC_003_T_010_INTEGRATE_GOOGLE_SSO_PROVIDER",
+      "summary": "Integrate Google as an SSO provider using NextAuth.js.",
+      "layer": "service",
+      "dependencies": [
+        "T-007",
+        "T-009"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": ".repomind/tickets/EPIC-004/T-010-add-basic-logging-for-admin-api-access",
+      "path": ".repomind/tickets/EPIC-004/T-010-add-basic-logging-for-admin-api-access.md",
+      "name": "REPAMIND_TICKETS_EPIC_004_T_010_ADD_BASIC_LOGGING_FOR_ADMIN_API_ACCESS",
+      "summary": "Add basic logging for admin API access attempts.",
+      "layer": "util",
+      "dependencies": [
+        "T-009"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": ".repomind/tickets/EPIC-003/T-011-register-application-with-microsoft-azure-ad",
+      "path": ".repomind/tickets/EPIC-003/T-011-register-application-with-microsoft-azure-ad.md",
+      "name": "REPAMIND_TICKETS_EPIC_003_T_011_REGISTER_APPLICATION_WITH_MICROSOFT_AZURE_AD",
+      "summary": "Register application with Microsoft Azure AD for SSO credentials.",
       "layer": "infra",
-      "dependencies": [],
+      "dependencies": [
+        "T-006"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-002/T-006-integrate-system-info-utilities-into-the-admin-api",
+      "path": ".repomind/tickets/EPIC-002/T-006-integrate-system-info-utilities-into-the-admin-api.md",
+      "name": "EPIC_002_T_006_INTEGRATE_SYSTEM_INFO_UTILITIES_INTO_THE_ADMIN_API",
+      "summary": "Integrates system info utilities into admin API route, returning real-time data.",
+      "layer": "api",
+      "dependencies": [
+        "src/app/api/admin/route.ts"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-002/T-008-secure-api-routes-with-authentication-middleware",
+      "path": ".repomind/tickets/EPIC-002/T-008-secure-api-routes-with-authentication-middleware.md",
+      "name": "EPIC_002_T_008_SECURE_API_ROUTES_WITH_AUTHENTICATION_MIDDLEWARE",
+      "summary": "Implements middleware to secure API routes, ensuring authenticated user access.",
+      "layer": "cross-cutting",
+      "dependencies": [
+        "src/middleware.ts",
+        "next.config"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-003/T-009-register-application-with-google-oauth",
+      "path": ".repomind/tickets/EPIC-003/T-009-register-application-with-google-oauth.md",
+      "name": "EPIC_003_T_009_REGISTER_APPLICATION_WITH_GOOGLE_OAUTH",
+      "summary": "Configures Google OAuth credentials for the application in Google Cloud Console.",
+      "layer": "infra",
+      "dependencies": [
+        "next.config",
+        ".env.local"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-003/T-012-integrate-microsoft-sso-provider",
+      "path": ".repomind/tickets/EPIC-003/T-012-integrate-microsoft-sso-provider.md",
+      "name": "EPIC_003_T_012_INTEGRATE_MICROSOFT_SSO_PROVIDER",
+      "summary": "Adds Microsoft as an authentication provider to NextAuth.js for user login.",
+      "layer": "service",
+      "dependencies": [
+        "package"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-003/T-007-implement-api-key-validation-middleware",
+      "path": ".repomind/tickets/EPIC-003/T-007-implement-api-key-validation-middleware.md",
+      "name": "EPIC_003_T_007_IMPLEMENT_API_KEY_VALIDATION_MIDDLEWARE",
+      "summary": "Creates middleware to validate API keys for secure admin API access.",
+      "layer": "cross-cutting",
+      "dependencies": [
+        "src/middleware/auth.ts",
+        "src/lib/auth.ts"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-002/T-007-implement-generic-sso-callback-handler",
+      "path": ".repomind/tickets/EPIC-002/T-007-implement-generic-sso-callback-handler.md",
+      "name": "EPIC_002_T_007_IMPLEMENT_GENERIC_SSO_CALLBACK_HANDLER",
+      "summary": "Implements generic NextAuth.js callback handler for SSO providers and session creation.",
+      "layer": "service",
+      "dependencies": [
+        "package"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-003/T-008-configure-admin-api-key-environment-variable",
+      "path": ".repomind/tickets/EPIC-003/T-008-configure-admin-api-key-environment-variable.md",
+      "name": "EPIC_003_T_008_CONFIGURE_ADMIN_API_KEY_ENVIRONMENT_VARIABLE",
+      "summary": "Sets up ADMIN_API_KEY securely in environment variables for API validation.",
+      "layer": "infra",
+      "dependencies": [
+        ".env.local",
+        "README"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-003/T-014-handle-user-session-and-logout",
+      "path": ".repomind/tickets/EPIC-003/T-014-handle-user-session-and-logout.md",
+      "name": "EPIC_003_T_014_HANDLE_USER_SESSION_AND_LOGOUT",
+      "summary": "Displays user session info and provides a functional logout button on UI.",
+      "layer": "ui",
+      "dependencies": [
+        "src/app/layout",
+        "src/app/page"
+      ],
+      "is_hotspot": false
+    },
+    {
+      "id": "EPIC-003/T-009-apply-api-key-middleware-to-the-api-admin-route",
+      "path": ".repomind/tickets/EPIC-003/T-009-apply-api-key-middleware-to-the-api-admin-route.md",
+      "name": "EPIC_003_T_009_APPLY_API_KEY_MIDDLEWARE_TO_THE_API_ADMIN_ROUTE",
+      "summary": "Integrates API key validation middleware into the /api/admin route handler.",
+      "layer": "api",
+      "dependencies": [
+        "src/app/api/admin/route.ts"
+      ],
+      "is_hotspot": true
+    },
+    {
+      "id": "EPIC-004/T-011-write-integration-tests-for-the-secured-admin-api",
+      "path": ".repomind/tickets/EPIC-004/T-011-write-integration-tests-for-the-secured-admin-api.md",
+      "name": "EPIC_004_T_011_WRITE_INTEGRATION_TESTS_FOR_THE_SECURED_ADMIN_API",
+      "summary": "Writes integration tests for the secured admin API, covering all scenarios.",
+      "layer": "infra",
+      "dependencies": [
+        "src/app/api/admin/route.test.ts"
+      ],
       "is_hotspot": false
     }
   ],
-  "generated_at": "2026-05-08T15:19:36.666Z",
+  "generated_at": "2026-05-08T16:50:01.568Z",
   "strategy": "deep-read",
-  "anchor_count": 16
+  "anchor_count": 45
 }
