@@ -24,11 +24,11 @@
       "id": "T-003",
       "path": ".repomind/tickets/EPIC-001/T-003-implement-a-basic-placeholder-response-for-api-adm.md",
       "title": "Implement a basic placeholder response for `/api/admin`",
-      "status": "todo",
+      "status": "in_progress",
       "priority": "high",
       "complexity": "S",
       "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:38:41.310Z"
+      "updated_at": "2026-05-08T16:02:09.681Z"
     },
     {
       "id": "T-004",
@@ -157,7 +157,7 @@
       "updated_at": "2026-05-08T15:22:03.975Z"
     }
   ],
-  "last_commit": "1d369df7fd52cd7ce0c3dc4217c9443e27c6cf80",
-  "updated_at": "2026-05-08T16:01:48.836Z",
-  "checksum": "9df783cb84a3789a95cac846ba5a88988a78c507b7708d32d75c2da5875e6fc1"
+  "last_commit": "d894c2654deb5fe19926022d15b828c902ee7a0d",
+  "updated_at": "2026-05-08T16:02:16.205Z",
+  "checksum": "23e8259db0bbb14d096572510bdcd59787f5da56b2d9e88cf721af0f267114e7"
 }
