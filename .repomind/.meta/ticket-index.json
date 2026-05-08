@@ -4,11 +4,11 @@
       "id": "T-001",
       "path": ".repomind/tickets/EPIC-001/T-001-create-the-api-admin-route-file.md",
       "title": "Create the `/api/admin` route file",
-      "status": "todo",
+      "status": "in_progress",
       "priority": "high",
       "complexity": "S",
       "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:38:41.310Z"
+      "updated_at": "2026-05-08T16:01:44.134Z"
     },
     {
       "id": "T-002",
@@ -157,7 +157,7 @@
       "updated_at": "2026-05-08T15:22:03.975Z"
     }
   ],
-  "last_commit": "8472cc2d9f8e20fa85c93909f54dcd1808c75038",
-  "updated_at": "2026-05-08T15:38:52.129Z",
-  "checksum": "85de2ab4ea83e64c6a03b026e382f2a8e9d02de72df9dedc99be1bf6c65994fb"
+  "last_commit": "1d369df7fd52cd7ce0c3dc4217c9443e27c6cf80",
+  "updated_at": "2026-05-08T16:01:48.836Z",
+  "checksum": "9df783cb84a3789a95cac846ba5a88988a78c507b7708d32d75c2da5875e6fc1"
 }
