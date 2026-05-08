@@ -1,5 +1,163 @@
 {
-  "tickets": [],
-  "adrs": [],
-  "updated_at": "2026-05-08T15:18:11.599Z"
+  "tickets": [
+    {
+      "id": "T-001",
+      "path": ".repomind/tickets/EPIC-001/T-001-design-the-products-page-layout.md",
+      "title": "Design the Products Page Layout",
+      "status": "todo",
+      "priority": "low",
+      "complexity": "S",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-002",
+      "path": ".repomind/tickets/EPIC-001/T-002-implement-products-page-ui-shell.md",
+      "title": "Implement Products Page UI Shell",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-003",
+      "path": ".repomind/tickets/EPIC-001/T-003-fetch-and-display-product-data-mock.md",
+      "title": "Fetch and Display Product Data (Mock)",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-004",
+      "path": ".repomind/tickets/EPIC-001/T-004-add-styling-for-products-page.md",
+      "title": "Add Styling for Products Page",
+      "status": "todo",
+      "priority": "low",
+      "complexity": "S",
+      "epic": "EPIC-001",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-005",
+      "path": ".repomind/tickets/EPIC-002/T-005-research-and-choose-sso-strategy-adr.md",
+      "title": "Research and Choose SSO Strategy (ADR)",
+      "status": "todo",
+      "priority": "urgent",
+      "complexity": "S",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-006",
+      "path": ".repomind/tickets/EPIC-002/T-006-configure-nextauth-js-base-setup.md",
+      "title": "Configure NextAuth.js Base Setup",
+      "status": "todo",
+      "priority": "urgent",
+      "complexity": "L",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-007",
+      "path": ".repomind/tickets/EPIC-002/T-007-implement-generic-sso-callback-handler.md",
+      "title": "Implement Generic SSO Callback Handler",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-008",
+      "path": ".repomind/tickets/EPIC-002/T-008-secure-api-routes-with-authentication-middleware.md",
+      "title": "Secure API Routes with Authentication Middleware",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-009",
+      "path": ".repomind/tickets/EPIC-003/T-009-register-application-with-google-oauth.md",
+      "title": "Register Application with Google OAuth",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "S",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-010",
+      "path": ".repomind/tickets/EPIC-003/T-010-integrate-google-sso-provider.md",
+      "title": "Integrate Google SSO Provider",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-011",
+      "path": ".repomind/tickets/EPIC-003/T-011-register-application-with-microsoft-azure-ad.md",
+      "title": "Register Application with Microsoft Azure AD",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "S",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-012",
+      "path": ".repomind/tickets/EPIC-003/T-012-integrate-microsoft-sso-provider.md",
+      "title": "Integrate Microsoft SSO Provider",
+      "status": "todo",
+      "priority": "high",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-013",
+      "path": ".repomind/tickets/EPIC-003/T-013-create-sso-login-buttons-on-ui.md",
+      "title": "Create SSO Login Buttons on UI",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "S",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    },
+    {
+      "id": "T-014",
+      "path": ".repomind/tickets/EPIC-003/T-014-handle-user-session-and-logout.md",
+      "title": "Handle User Session and Logout",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "M",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:21:49.607Z"
+    }
+  ],
+  "adrs": [
+    {
+      "id": "ADR-001",
+      "path": ".repomind/adrs/adr-001.md",
+      "title": "Establish Initial Architectural Baseline",
+      "status": "unknown",
+      "updated_at": "2026-05-08T15:22:03.510Z"
+    },
+    {
+      "id": "ADR-002",
+      "path": ".repomind/adrs/adr-002.md",
+      "title": "Choose SSO Solution for Next.js",
+      "status": "accepted",
+      "updated_at": "2026-05-08T15:22:03.975Z"
+    }
+  ],
+  "last_commit": "85f9dac471dfcbe08f91b08ebdf2f17ba4cd55b6",
+  "updated_at": "2026-05-08T15:22:03.975Z",
+  "checksum": "85de2ab4ea83e64c6a03b026e382f2a8e9d02de72df9dedc99be1bf6c65994fb"
 }
