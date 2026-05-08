@@ -2,123 +2,123 @@
   "tickets": [
     {
       "id": "T-001",
-      "path": ".repomind/tickets/EPIC-001/T-001-design-the-products-page-layout.md",
-      "title": "Design the Products Page Layout",
+      "path": ".repomind/tickets/EPIC-001/T-001-create-the-api-admin-route-file.md",
+      "title": "Create the `/api/admin` route file",
       "status": "todo",
-      "priority": "low",
+      "priority": "high",
       "complexity": "S",
       "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-002",
-      "path": ".repomind/tickets/EPIC-001/T-002-implement-products-page-ui-shell.md",
-      "title": "Implement Products Page UI Shell",
+      "path": ".repomind/tickets/EPIC-001/T-002-define-the-initial-system-status-response-structur.md",
+      "title": "Define the initial system status response structure",
       "status": "todo",
       "priority": "medium",
-      "complexity": "M",
+      "complexity": "XS",
       "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-003",
-      "path": ".repomind/tickets/EPIC-001/T-003-fetch-and-display-product-data-mock.md",
-      "title": "Fetch and Display Product Data (Mock)",
+      "path": ".repomind/tickets/EPIC-001/T-003-implement-a-basic-placeholder-response-for-api-adm.md",
+      "title": "Implement a basic placeholder response for `/api/admin`",
       "status": "todo",
-      "priority": "medium",
-      "complexity": "M",
+      "priority": "high",
+      "complexity": "S",
       "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-004",
-      "path": ".repomind/tickets/EPIC-001/T-004-add-styling-for-products-page.md",
-      "title": "Add Styling for Products Page",
+      "path": ".repomind/tickets/EPIC-002/T-004-create-a-utility-to-fetch-application-version.md",
+      "title": "Create a utility to fetch application version",
       "status": "todo",
-      "priority": "low",
+      "priority": "medium",
       "complexity": "S",
-      "epic": "EPIC-001",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "epic": "EPIC-002",
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-005",
-      "path": ".repomind/tickets/EPIC-002/T-005-research-and-choose-sso-strategy-adr.md",
-      "title": "Research and Choose SSO Strategy (ADR)",
+      "path": ".repomind/tickets/EPIC-002/T-005-implement-a-utility-to-get-server-uptime.md",
+      "title": "Implement a utility to get server uptime",
       "status": "todo",
-      "priority": "urgent",
+      "priority": "medium",
       "complexity": "S",
       "epic": "EPIC-002",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-006",
-      "path": ".repomind/tickets/EPIC-002/T-006-configure-nextauth-js-base-setup.md",
-      "title": "Configure NextAuth.js Base Setup",
+      "path": ".repomind/tickets/EPIC-002/T-006-integrate-system-info-utilities-into-the-admin-api.md",
+      "title": "Integrate system info utilities into the admin API route",
       "status": "todo",
-      "priority": "urgent",
-      "complexity": "L",
+      "priority": "high",
+      "complexity": "M",
       "epic": "EPIC-002",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-007",
-      "path": ".repomind/tickets/EPIC-002/T-007-implement-generic-sso-callback-handler.md",
-      "title": "Implement Generic SSO Callback Handler",
+      "path": ".repomind/tickets/EPIC-003/T-007-implement-api-key-validation-middleware.md",
+      "title": "Implement API key validation middleware",
       "status": "todo",
-      "priority": "high",
+      "priority": "urgent",
       "complexity": "M",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-008",
-      "path": ".repomind/tickets/EPIC-002/T-008-secure-api-routes-with-authentication-middleware.md",
-      "title": "Secure API Routes with Authentication Middleware",
+      "path": ".repomind/tickets/EPIC-003/T-008-configure-admin-api-key-environment-variable.md",
+      "title": "Configure `ADMIN_API_KEY` environment variable",
       "status": "todo",
       "priority": "high",
-      "complexity": "M",
-      "epic": "EPIC-002",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "complexity": "S",
+      "epic": "EPIC-003",
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-009",
-      "path": ".repomind/tickets/EPIC-003/T-009-register-application-with-google-oauth.md",
-      "title": "Register Application with Google OAuth",
+      "path": ".repomind/tickets/EPIC-003/T-009-apply-api-key-middleware-to-the-api-admin-route.md",
+      "title": "Apply API key middleware to the `/api/admin` route",
       "status": "todo",
-      "priority": "high",
+      "priority": "urgent",
       "complexity": "S",
       "epic": "EPIC-003",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-010",
-      "path": ".repomind/tickets/EPIC-003/T-010-integrate-google-sso-provider.md",
-      "title": "Integrate Google SSO Provider",
+      "path": ".repomind/tickets/EPIC-004/T-010-add-basic-logging-for-admin-api-access.md",
+      "title": "Add basic logging for admin API access",
       "status": "todo",
-      "priority": "high",
+      "priority": "medium",
       "complexity": "M",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "epic": "EPIC-004",
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-011",
-      "path": ".repomind/tickets/EPIC-003/T-011-register-application-with-microsoft-azure-ad.md",
-      "title": "Register Application with Microsoft Azure AD",
-      "status": "todo",
-      "priority": "high",
-      "complexity": "S",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-08T15:21:49.607Z"
-    },
-    {
-      "id": "T-012",
-      "path": ".repomind/tickets/EPIC-003/T-012-integrate-microsoft-sso-provider.md",
-      "title": "Integrate Microsoft SSO Provider",
+      "path": ".repomind/tickets/EPIC-004/T-011-write-integration-tests-for-the-secured-admin-api.md",
+      "title": "Write integration tests for the secured admin API",
       "status": "todo",
       "priority": "high",
       "complexity": "M",
-      "epic": "EPIC-003",
-      "updated_at": "2026-05-08T15:21:49.607Z"
+      "epic": "EPIC-004",
+      "updated_at": "2026-05-08T15:38:41.310Z"
+    },
+    {
+      "id": "T-012",
+      "path": ".repomind/tickets/EPIC-004/T-012-update-readme-with-admin-api-usage-and-security-no.md",
+      "title": "Update README with admin API usage and security notes",
+      "status": "todo",
+      "priority": "medium",
+      "complexity": "S",
+      "epic": "EPIC-004",
+      "updated_at": "2026-05-08T15:38:41.310Z"
     },
     {
       "id": "T-013",
@@ -157,7 +157,7 @@
       "updated_at": "2026-05-08T15:22:03.975Z"
     }
   ],
-  "last_commit": "85f9dac471dfcbe08f91b08ebdf2f17ba4cd55b6",
-  "updated_at": "2026-05-08T15:22:03.975Z",
+  "last_commit": "8472cc2d9f8e20fa85c93909f54dcd1808c75038",
+  "updated_at": "2026-05-08T15:38:52.129Z",
   "checksum": "85de2ab4ea83e64c6a03b026e382f2a8e9d02de72df9dedc99be1bf6c65994fb"
 }
