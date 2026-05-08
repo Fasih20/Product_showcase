@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  // Fixed the vulnerability!
+  // Fixed the vulnerability! to test agents
   const ADMIN_SECRET = process.env.ADMIN_SECRET || "not-configured";
   
   return NextResponse.json({ 
